@@ -50,13 +50,13 @@ def main ():
     st.title("Diabetes Prediction App")
 
     if add_selectbox == 'Online':
-         Pregnancies=st.text_input('Pregnancies')
-         Glucose=st.text_input('Glucose')
-         Blood_Pressure=st.text_input('BloodPressure')
-         Skin_Thickness=st.text_input('SkinThickness')
-         Insulin=st.text_input('Insulin')
-         BMI=st.text_input('BMI')
-         Diabetes_Pedigree_Function=st.text_input('DiabetesPedigreeFunction')
+         Pregnancies=st.text_input('Pregnancies(Input numbers)')
+         Glucose=st.text_input('Glucose(Input numbers)')
+         Blood_Pressure=st.text_input('BloodPressure(Input numbers)')
+         Skin_Thickness=st.text_input('SkinThickness(Input numbers)')
+         Insulin=st.text_input('Insulin(Input numbers)')
+         BMI=st.text_input('BMI(Input numbers)')
+         Diabetes_Pedigree_Function=st.text_input('DiabetesPedigreeFunction(Input numbers)')
 
 
          Age = st.text_input('Age')
@@ -91,7 +91,7 @@ def main ():
 
         if file_upload is not None:
             data = pd.read_csv(file_upload)
-
+            data=data.drop('Outcome', axis=1)
 
 
             predictions = cv.predict(data)
