@@ -87,7 +87,7 @@ def main ():
 
 
 
-        st.title('Make sure the csv File is in the same format  as iphone.csv before uploading to avoid Error')
+        st.title('Make sure the csv File is in the same format  as diabetex.csv before uploading to avoid Error')
 
         if file_upload is not None:
             data = pd.read_csv(file_upload)
