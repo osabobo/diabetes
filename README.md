@@ -1,2 +1,2 @@
 # This app predicts diabetes
-## It also talks about things
+## It also demonstrate how to use the app to predicts diabetes
