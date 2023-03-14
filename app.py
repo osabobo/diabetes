@@ -25,7 +25,7 @@ def prediction(Pregnancies,Glucose,Blood_Pressure,Skin_Thickness,Insulin,BMI,Dia
     if prediction == 0:
         pred = 'No, this is about 76 percentage that you are diabetes free'
     else:
-        pred = 'Yes, this is about 76 percentage that you are diabetes free'
+        pred = 'Yes, this is about 76 percentage that you have diabetes'
     return pred
 
 def main ():
@@ -48,6 +48,7 @@ def main ():
 
 
     st.title("Diabetes Prediction App")
+    st.title("Please check with your hospital to know about the following input")
 
     if add_selectbox == 'Online':
          Pregnancies=st.text_input('Pregnancies(Input numbers)')
