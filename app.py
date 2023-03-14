@@ -23,9 +23,9 @@ def prediction(Pregnancies,Glucose,Blood_Pressure,Skin_Thickness,Insulin,BMI,Dia
     prediction = cv.predict(
         [[Pregnancies,Glucose,Blood_Pressure,Skin_Thickness,Insulin,BMI,Diabetes_Pedigree_Function,Age]])
     if prediction == 0:
-        pred = 'No'
+        pred = 'No this is about 76 percentage that you are diabetes free'
     else:
-        pred = 'Yes'
+        pred = 'Yes this is about 76 percentage that you are diabetes free'
     return pred
 
 def main ():
